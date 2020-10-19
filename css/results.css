@@ -11,11 +11,14 @@ body {
 }
 
 .phrase-results {
+    font-family: 'Rubik', sans-serif;
     font-size: 32px;
     margin-bottom: 60px;
     color: #FFFFFF;
     letter-spacing: 1.6px;
     font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 /* estilização dos botões */
@@ -25,6 +28,7 @@ body {
 
 .tweet-button {
     width: 150px;
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: #FFFFFF;
     background-color: #0A1744;
@@ -33,6 +37,7 @@ body {
 
 .images-button {
     width: 150px;
+    font-family: 'Rubik', sans-serif;
     font-size: 16px;
     color: #FFFFFF;
     background-color: #0A1744;
@@ -73,6 +78,7 @@ body {
 }
 
 .user-post {
+    font-family: 'Rubik', sans-serif;
     font-size: 17px;
     color: #FFFFFF;
     margin-bottom: -15px;
@@ -80,6 +86,7 @@ body {
 }
 
 .user-twitter {
+    font-family: 'Rubik', sans-serif;
     font-size: 19px;
     color: #FFFFFF;
 }
@@ -119,23 +126,27 @@ body {
 }
 
 .tweet-area h3 {
+    font-family: 'Rubik', sans-serif;
     color: #FFFFFF;
     font-size: 27px;
 }
 
 .tweet-area span {
+    font-family: 'Rubik', sans-serif;
     color: #FFFFFF;
     font-size: 20px;
     opacity: 0.43;
 }
 
 .tweet-area p {
+    font-family: 'Rubik', sans-serif;
     letter-spacing: 0.23px;
     color: #D9D9D9;
     font-size: 19px;
 }
 
 .tweet-area a {
+    font-family: 'Rubik', sans-serif;
     color: #72EFDB;
     font-size: 20px;
     text-decoration: none;
@@ -235,4 +246,5 @@ body {
         font-size: 14px;
         margin-top: -10px;
     }
+ }
 /* FIM da seção media query */
