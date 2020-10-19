@@ -1,0 +1,67 @@
+body {
+    background: url("../images/hero-bg.jpg") 0% 0% no-repeat padding-box;
+    background-size: cover;
+    opacity: 1;
+  }
+  h1{
+    font: normal normal bold 35px/21px 'Rubik';
+    letter-spacing: 0px;
+    color: #72EFDB;
+    opacity: 1;
+    text-align: center;
+  }
+  .login-form {
+    border-radius: 14px;
+    opacity: 1;
+    /* Usado porcentagem para flexibilizar a página */
+    width: 28%;
+    height: 49%;
+    margin: 236px 683px 236px 684px;
+    display: flex;
+    flex-direction: column;
+    /* Utilizad RGBA para transparecer somente o fundo */
+    background: rgba(10, 10, 55, 0.5);
+
+  }
+  form {
+    opacity: 1;
+    margin: 131px 48px 130px 48px;
+    display: flex;
+    flex-direction: column;
+    width: 83%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .button {
+    background: #72EFDB 0% 0% no-repeat padding-box;
+    opacity: 1;
+    width: 45%;
+    padding: 2%;
+    border-radius: 34px;
+    border-style: none;
+    font: normal normal normal 19px/40px 'Rubik';
+    letter-spacing: 0.57px;
+    text-transform: uppercase;
+    color: #0B1741;
+    margin-top: 18%;
+  }
+
+  .input {
+    background-color: transparent;
+    font: normal normal normal 19px/40px 'Rubik';
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 44px;
+    width: 100%;
+  }
+/* Media query ainda em fase de desenvolvimento
+    @media (max-width: 600px) {
+    .login-form {
+      background: blue;
+    } */
+  }

@@ -1,28 +1,29 @@
-  <html>
+<html>
 
     <head>
+      <!-- Link Google Fonts para Rubik -->
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet"> 
         <meta charset="UTF-8" />
         <title>Login</title>
+        <!-- Carregamento do arquivo de CSS -->
+        <link rel="stylesheet" href="./css/login.css">
     </head>
 
-    <header> 
+<!--    Aguardando modificações no css do arquivo para modificar o css do login
+   <header>
       <iframe src="./header.html" title="header"></iframe>
-    </header>
+    </header> -->
 
       <body>
-
-        <section>
-
+          <div class="login-form">
               <form>
-                    <strong> Login </strong> <br>
-                    <input type="text" name="user" placeholder="Usuário" /> <br>
-                    <input type="password" name="password" placeholder="Senha" /> <br>
-                    <!--Submit para validação dos dados de login-->
-                    <input type="submit" value="acessar" />
+                <h1>Login</h1>
+                <input type="text" class="input" name="user" placeholder="Usuário" />
+                <input type="password" class="input" name="password" placeholder="Senha" /> 
+                <!--Submit para validação dos dados de login-->
+                <input class="button" type="submit" value="acessar" />
               </form>
-
-        </section>
-
+            </div>
       </body>
 
-  </html>
+</html>
