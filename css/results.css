@@ -1,73 +1,203 @@
 body {
     background-color: #0A1744;
+    margin: 0;
 }
 
-.content{
+.container {
+    background-color: #0A1744;
     display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .phrase-results {
-    text-align: center;
-    letter-spacing: 1.6px;
-    opacity: 1;
+    font-size: 32px;
+    margin-bottom: 60px;
     color: #FFFFFF;
+    letter-spacing: 1.6px;
+    font-weight: 600;
 }
 
+/*Seção de imagens */
 .img-section {
-    margin-top: 80px;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 920px;
-    height: max-content;
+    width: 92%;
 }
 
-.im-results {
-    max-width: 1686px;
+.img-area {
     display: flex;
+    flex-flow: wrap;
+    align-content: baseline;
+    width: 48%;
+}
+
+.img-area li {
+    margin-left: 35px;
+    margin-bottom: 35px;
+    position: relative;
+    list-style: none;
 }
 
 .img-final {
-    display: flex;
-    flex-wrap: wrap;
-    height: 287px;
-    width: 287px;
-    border: none;
+    width: 200px;
+    height: 200px;
     border-radius: 21px;
-    opacity: 1;
-    justify-content: flex-start;
-    align-content: stretch;
-    margin-left: 20px;
 }
 
-.post {
-    text-align: left;
-    position: relative;
-    bottom: 130px;
-    margin-left: 40px;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
-}
-
-.texto {
-    text-align: left;
-    left: 20px;
-    position: relative;
-    bottom: 130px;
-    margin-left: 20px;
-}
-
-.tweet-area{
-
-    margin-top: 80px;
-    margin-bottom: 80px;
+.posted-for {
+    position: absolute;
+    margin-top: -110px;
+    padding-left: 15px;
 }
 
 .user-post {
-    font-size: 17px
+    font-size: 17px;
+    color: #FFFFFF;
+    margin-right: 65px;
+    margin-bottom: -15px;
+    margin-top: 40px;
 }
 
 .user-twitter {
-    font-weight: bolder;
     font-size: 21px;
+    color: #FFFFFF;
 }
+
+/*Tweets*/
+
+.tweet-area {
+    width: 55%;
+}
+
+.tweet-area li {
+    width: 100%;
+    background-color: #1E3E7B17;
+    border: 1px solid #FFFFFF24;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    display: flex;
+    height: 229px;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.tweet-area li img {
+    border-radius: 50px;
+    opacity: 1;
+    width: 82px;
+    height: 82px;
+    margin-left: 28px;
+    margin-top: 35px;
+}
+
+.tweet-area li div {
+    margin-left: 31px;
+    margin-right: 31px;
+    margin-top: 10px;
+}
+
+.tweet-area h3 {
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-size: 27px;
+}
+
+.tweet-area span {
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    font-size: 20px;
+    opacity: 0.43;
+}
+
+.tweet-area p {
+    letter-spacing: 0.23px;
+    color: #D9D9D9;
+    font-size: 19px;
+}
+
+.tweet-area a {
+    letter-spacing: 0px;
+    color: #72EFDB;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Seção de media querys */
+
+@media (max-width: 1200px) {
+    .img-area {
+        width: 47%;
+    }
+    .img-final {
+        width: 179px;
+        height: 179px;
+        border-radius: 21px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .tweet-area{
+        width: 100%;
+    }
+}
+
+@media (max-width: 836px){
+    .tweet-area{
+        width: 100%;
+    }
+    .img-area{
+        display: none;
+    }
+}
+
+
+@media (max-width: 559px) {
+   
+   area li div {
+        margin-top: 2px;
+    }
+    .tweet-area h3 {
+        font-size: 25px;
+    }
+    .tweet-area p {
+        letter-spacing: 0.23px;
+        color: #D9D9D9;
+        font-size: 17px;
+        margin-top: -14px;
+    }
+    .tweet-area a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 478px) {
+
+    .tweet-area li div {
+         margin-top: 2px;
+     }
+     .tweet-area h3 {
+         font-size: 21px;
+     }
+
+     .tweet-area span{
+         font-size: 17px;
+     }
+     .tweet-area p {
+         letter-spacing: 0.23px;
+         color: #D9D9D9;
+         font-size: 16px;
+         margin-top: -13px;
+     }
+     .tweet-area a {
+         font-size: 15px;
+     }
+ }
+ 
+ @media (max-width: 405px) {
+    .tweet-area p {
+        letter-spacing: 0.23px;
+        color: #D9D9D9;
+        font-size: 14px;
+        margin-top: -10px;
+    }
