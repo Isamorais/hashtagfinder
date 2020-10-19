@@ -1,0 +1,20 @@
+footer {
+    background-color: #1E3E7B;
+    text-align: center;
+    width: 100%;
+    padding: 50 0 50 0;
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 19px;
+}
+
+/* media queries */
+@media screen and (max-width: 490px) {
+    footer {
+        padding: 15 0 15 0;
+        font-size: 12px;
+    }
+}
+
+/* fontes utilizadas */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
