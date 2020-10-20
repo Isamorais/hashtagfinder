@@ -28,7 +28,7 @@ nav ul {
 }
 nav ul li {
     display: inline-block;
-    margin: 0px !important;
+    margin: 0px;
 }
 nav ul li img {
     height: 10px;
