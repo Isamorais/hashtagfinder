@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+}
+header {
+    background-color: #0A1744;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+/* decoração dos links */
+a {
+    text-decoration: none;
+}
+/* estilo do logo */
+img.logo {
+    margin-left: 20px;
+}
+
+/* div mãe da lista */
+.header_list {
+    float: right;
+}
+
+/* estilo do que está dentro da lista */
+nav ul {
+    list-style: none;
+    margin:0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0px !important;
+}
+nav ul li img {
+    height: 10px;
+}
+nav li a {
+    display: inline-block;
+    margin-right: 20px;
+    width: 90px;
+    border-radius:25px 25px 25px 25px;
+    padding: 10px;
+    background-color: #72EFDB;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #0B1741;
+    text-align: center;
+}
+
+/* botões login e logout no azul mais escuro */
+ .button_darkblue a {
+    background-color: #1E3E7B;
+    color: #FFFFFF;
+}
+
+/* fontes utilizadas */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
