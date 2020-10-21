@@ -7,23 +7,31 @@
     background-image: url("/images/hero-bg.jpg");
     background-color: #0A1744;
     background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text_hero {
+    width: 80%;
+    height: 60vh;
+    align-items: left;
 }
 /* estilo do h1 */
-div h1 {
-    display: block;
-    width: 840px;
-    font-size: 72px;
+    h1 {
+    width: 820px;
+    font-size: 4.5em;
     font-weight: 900;
     color: #fff;
     line-height: 130%;
 }
 /* estilo do texto abaixo do h1 */
-div p {
-    display: block;
+div p { 
     width: 640px;
-    font-size: 31px;
+    font-size: 2em;
     color: #fff;
 }
 
@@ -33,14 +41,13 @@ div p {
     width: 40%;
     padding: 20px;
     background-color: #1E3E7B;
-
 }
 
 input {
     background-color: transparent;
     border: none;
     color: #8D9DA2;
-    font-size: 30px;
+    font-size: 2em;
     width: 80%;
 }
 .search_area img {
@@ -48,6 +55,10 @@ input {
     margin-right: 25px;
     margin-left: 25px;
 }
-
+/* mensagem de erro */
+.alert_error {
+    color: #fff;
+    margin-top: 20px;
+}
 /* fontes utilizadas */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
