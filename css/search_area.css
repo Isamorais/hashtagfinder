@@ -30,6 +30,7 @@
 }
 /* estilo do texto abaixo do h1 */
 div p { 
+    margin-top: 10px;
     width: 640px;
     font-size: 2em;
     color: #fff;
@@ -60,5 +61,41 @@ input {
     color: #fff;
     margin-top: 20px;
 }
+
+/* media queries */
+@media screen and (max-width: 490px) {
+    .search_area {
+        width:80%;
+        padding:15px;
+    }
+    input {
+        font-size: 1.5em;
+    }
+    .hero {
+        justify-content: space-between;
+    }
+    .text_hero {
+        width: 80%;
+        margin-bottom: -200px;
+        margin-top: 50px;
+        height: 0vh;
+        text-align:left;
+        color:red;
+    }
+    h1 {
+        width: 420px;
+        font-size: 2em;
+    }
+    div p {
+        width: 420px;
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 460px) {
+    input {
+        width: 50%;
+    }
+}
+
 /* fontes utilizadas */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
