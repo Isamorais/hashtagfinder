@@ -2,7 +2,9 @@ body {
     background: url("../images/hero-bg.jpg") 0% 0% no-repeat padding-box;
     background-size: cover;
     opacity: 1;
+    height: 100%;
   }
+  
 /* Ainda alterando iframe para adequação na página */
   iframe {
     width: 100%;
