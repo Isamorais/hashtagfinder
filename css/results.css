@@ -26,7 +26,7 @@ body {
     margin-bottom: 30px;
 }
 
-.tweet-button {
+#tweet-button {
     width: 150px;
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
@@ -35,7 +35,7 @@ body {
     border: none;
 }
 
-.images-button {
+#images-button {
     width: 150px;
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
@@ -50,6 +50,7 @@ body {
     display: flex;
     width: 92%;
 }
+
 
 /* Estilização área de imagens */
 .img-area {
@@ -199,6 +200,7 @@ body {
         width: 100%;
     }
     .img-area {
+        width: 100%;
         display: none;
     }
 }
