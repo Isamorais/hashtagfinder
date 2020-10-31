@@ -7,6 +7,7 @@
         <title>Login</title>
         <!-- Carregamento do arquivo de CSS -->
         <link rel="stylesheet" href="./css/login.css">
+        <script type="text/javascript" src="./js/login.js"></script>
     </head>
 
    <header>
@@ -15,10 +16,10 @@
 
       <body>
           <div class="login-form">
-              <form> 
+              <form onsubmit="validate(event)"> 
                 <h1>Login</h1>
-                <input type="text" class="input" name="user" placeholder="Usuário" />
-                <input type="password" class="input" name="password" placeholder="Senha" /> 
+                <input class="input" type="text" id="user" placeholder="Usuário" required/>
+                <input class="input" type="password" id="password" placeholder="Senha" required/> 
                 <!--Submit para validação dos dados de login-->
                 <input class="button" type="submit" value="acessar" />
               </form>
