@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="css/results.css" />
+    <link rel="stylesheet" href="./css/results.css" />
+    <link href="./lightbox/css/lightbox.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <title>Results after search</title>
 </head>
@@ -12,16 +13,17 @@
     <section class="container">
         <p class="phrase-results">Exibindo os 10 resultados mais recentes para #hashtag natureza</p>
         <div class="result-buttons">
-            <button class="tweet-button">Tweets</button>
-            <button class="images-button">Imagens</button>
+            <input type="button" id="tweet-button" value="Tweets" onclick="tweets()">
+            <input type="button" id="images-button" value="imagens" onclick="imagens()">
         </div>
 
-        <!--Seção exibindo os posts dos usuários-->
         <div class="post-section">
             <!--Seção exibindo os 10 resultados de imagens após a busca-->
-            <ul class="img-area">
+            <ul class="img-area" id="img-post">
                 <li>
-                    <img class="img-final" src="images/alberta-2297204_1280.jpg" alt="resultado1">
+                    <a data-lightbox="image-1" href="./images/alberta-2297204_1280.jpg">
+                        <img class="img-final" src="images/alberta-2297204_1280.jpg" alt="resultado1">
+                    </a>
                     <div class="posted-for">
                         <p class="user-post"> Postado por:</p>
                         <p class="user-twitter"> @twitterusername</p>
@@ -29,7 +31,9 @@
                 </li>
 
                 <li>
-                    <img class="img-final" src="images/heart-1776746_1280.jpg" alt="resultado1">
+                    <a data-lightbox="image-1" href="./images/heart-1776746_1280.jpg">
+                        <img class="img-final" src="./images/heart-1776746_1280.jpg" alt="resultado2">
+                    </a>
                     <div class="posted-for">
                         <p class="user-post"> Postado por:</p>
                         <p class="user-twitter"> @twitterusername</p>
@@ -37,7 +41,9 @@
                 </li>
 
                 <li>
-                    <img class="img-final" src="images/hintersee-3601004_1280.jpg" alt="resultado1">
+                    <a data-lightbox="image-1" href="./images/hintersee-3601004_1280.jpg">
+                        <img class="img-final" src="./images/hintersee-3601004_1280.jpg" alt="resultado3">
+                    </a>
                     <div class="posted-for">
                         <p class="user-post"> Postado por:</p>
                         <p class="user-twitter"> @twitterusername</p>
@@ -45,7 +51,9 @@
                 </li>
 
                 <li>
-                    <img class="img-final" src="images/italy-1587287_1280.jpg" alt="resultado1">
+                    <a data-lightbox="image-1" href="./images/italy-1587287_1280.jpg">
+                        <img class="img-final" src="./images/italy-1587287_1280.jpg" alt="resultado4">
+                    </a>
                     <div class="posted-for">
                         <p class="user-post"> Postado por:</p>
                         <p class="user-twitter"> @twitterusername</p>
@@ -53,7 +61,9 @@
                 </li>
 
                 <li>
-                    <img class="img-final" src="images/landscape-336542_1280.jpg" alt="resultado1">
+                    <a data-lightbox="image-1" href="./images/landscape-336542_1280.jpg">
+                        <img class="img-final" src="./images/landscape-336542_1280.jpg" alt="resultado5">
+                    </a>
                     <div class="posted-for">
                         <p class="user-post"> Postado por:</p>
                         <p class="user-twitter"> @twitterusername</p>
@@ -61,7 +71,9 @@
                 </li>
 
                 <li>
-                    <img class="img-final" src="images/nature-3125912_1280.jpg" alt="resultado1">
+                    <a data-lightbox="image-1" href="./images/nature-3125912_1280.jpg">
+                        <img class="img-final" src="./images/nature-3125912_1280.jpg" alt="resultado6">
+                    </a>
                     <div class="posted-for">
                         <p class="user-post"> Postado por:</p>
                         <p class="user-twitter"> @twitterusername</p>
@@ -69,7 +81,9 @@
                 </li>
 
                 <li>
-                    <img class="img-final" src="images/road-1072823_1280.jpg" alt="resultado1">
+                    <a data-lightbox="image-1" href="./images/road-1072823_1280.jpg">
+                        <img class="img-final" src="./images/road-1072823_1280.jpg" alt="resultado7">
+                    </a>
                     <div class="posted-for">
                         <p class="user-post"> Postado por:</p>
                         <p class="user-twitter"> @twitterusername</p>
@@ -77,7 +91,9 @@
                 </li>
 
                 <li>
-                    <img class="img-final" src="images/trees-5605176_1280.jpg" alt="resultado1">
+                    <a data-lightbox="image-1" href="./images/trees-5605176_1280.jpg">
+                        <img class="img-final" src="./images/trees-5605176_1280.jpg" alt="resultado8">
+                    </a>
                     <div class="posted-for">
                         <p class="user-post"> Postado por:</p>
                         <p class="user-twitter"> @twitterusername</p>
@@ -85,7 +101,9 @@
                 </li>
 
                 <li>
-                    <img class="img-final" src="images/utah-440520_1280.jpg" alt="resultado1">
+                    <a data-lightbox="image-1" href="./images/utah-440520_1280.jpg">
+                        <img class="img-final" src="./images/utah-440520_1280.jpg" alt="resultado9">
+                    </a>
                     <div class="posted-for">
                         <p class="user-post"> Postado por:</p>
                         <p class="user-twitter"> @twitterusername</p>
@@ -93,15 +111,20 @@
                 </li>
 
                 <li>
-                    <img class="img-final" src="images/yellowstone-national-park-1581879_1280.jpg" alt="resultado1">
+                    <a data-lightbox="image-1" href="./images/yellowstone-national-park-1581879_1280.jpg">
+                        <img class="img-final" src="./images/yellowstone-national-park-1581879_1280.jpg"
+                            alt="resultado10">
+                    </a>
                     <div class="posted-for">
                         <p class="user-post"> Postado por:</p>
                         <p class="user-twitter"> @twitterusername</p>
                     </div>
                 </li>
             </ul>
-            <!--Seção exibindo os 10 resultados dos perfis após a busca-->
-            <ul class="tweet-area">
+            <!--FIM da seção de imagens-->
+
+            <!--Seção exibindo os 10 resultados dos posts após a busca-->
+            <ul class="tweet-area" id="tweet-post">
                 <li>
                     <img src="images/profle-icon.png">
                     <div>
@@ -230,8 +253,14 @@
                 </li>
             </ul>
         </div>
+        <!--FIM da seção dos posts -->
     </section>
 
+
+    <!--Seção dos scripts-->
+    <script type="text/javascript" src="./js/results.js"></script>
+    <script src="./lightbox/js/lightbox-plus-jquery.js"></script>
+    <!--Fim dos scripts-->
 </body>
 
 </html>
