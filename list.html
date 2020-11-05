@@ -1,88 +1,33 @@
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Search List</title>
     <link rel="stylesheet" href="css/list.css" type="text/css" />
-    
-</head>
+  </head>
 
-<body onscroll="nome">
+  <body>
     <iframe src="header.html"></iframe>
     <!--link do cabeçalho-->
 
     <div class="all-container">
-        <!--div para conter todas as divs-->
-        <h1 class="title">Buscas Realizadas</h1>
+      <!--div para conter todas as divs-->
+      <h1 class="title">Buscas Realizadas</h1>
 
-        <div class="table">
-            <div class="th-container">
-                <div class="th">
-                    <div class="th-hash">Hashtag</div>
-                    <div class="th-date">Data</div>
-                    <div class="th-hour">Hora</div>
-                </div>
-            </div>
-            <div class="tr-container">
-                <div class="tr">
-                    <div class="tr-hash">#hashtagname</div>
-                    <div class="tr-date">25/02</div>
-                    <div class="tr-hour">09:30</div>
-                </div>
-
-                <div class="tr">
-                    <div class="tr-hash">#hashtagname</div>
-                    <div class="tr-date">25/02</div>
-                    <div class="tr-hour">09:30</div>
-                </div>
-
-                <div class="tr">
-                    <div class="tr-hash">#hashtagname</div>
-                    <div class="tr-date">25/02</div>
-                    <div class="tr-hour">09:30</div>
-                </div>
-
-                <div class="tr">
-                    <div class="tr-hash">#hashtagname</div>
-                    <div class="tr-date">25/02</div>
-                    <div class="tr-hour">09:30</div>
-                </div>
-
-                <div class="tr">
-                    <div class="tr-hash">#hashtagname</div>
-                    <div class="tr-date">25/02</div>
-                    <div class="tr-hour">09:30</div>
-                </div>
-
-                <div class="tr">
-                    <div class="tr-hash">#hashtagname</div>
-                    <div class="tr-date">25/02</div>
-                    <div class="tr-hour">09:30</div>
-                </div>
-
-                <div class="tr">
-                    <div class="tr-hash">#hashtagname</div>
-                    <div class="tr-date">25/02</div>
-                    <div class="tr-hour">09:30</div>
-                </div>
-
-                <div class="tr">
-                    <div class="tr-hash">#hashtagname</div>
-                    <div class="tr-date">25/02</div>
-                    <div class="tr-hour">09:30</div>
-                </div>
-
-                <div class="tr borderlow">
-                    <div class="tr-hash">#hashtagname</div>
-                    <div class="tr-date">25/02</div>
-                    <div class="tr-hour">09:30</div>
-                </div>
-            </div>
-
+      <div class="table">
+        <div class="th-container">
+          <div class="th">
+            <div class="th-hash">Hashtag</div>
+            <div class="th-date">Data</div>
+            <div class="th-hour">Hora</div>
+          </div>
         </div>
-          
+        <div id='table' class="tr-container"></div> 
+      </div>
     </div>
-    
-</body>
-
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.js"
+    integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+    crossorigin="anonymous"></script>
+    <script src="./list.js"></script>
+  </body>
 </html>
